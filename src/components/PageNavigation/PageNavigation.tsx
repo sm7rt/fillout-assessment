@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { DndContext, closestCenter, PointerSensor, useSensor, useSensors, DragEndEvent } from '@dnd-kit/core';
 import { arrayMove, SortableContext, verticalListSortingStrategy } from '@dnd-kit/sortable';
-import { Page, PageNavigationProps } from '../../types/types';
+import { PageNavigationProps } from '../../types/types';
 import { SortablePage } from '../SortablePage/SortablePage';
 
 export const PageNavigation: React.FC<PageNavigationProps> = ({ pages, activePageId, setPages, setActivePageId }) => {

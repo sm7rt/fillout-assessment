@@ -1,4 +1,4 @@
-import { FlagIcon as FlagIconOutline, PencilSquareIcon, ClipboardIcon, Squares2X2Icon, TrashIcon, EllipsisVerticalIcon } from '@heroicons/react/24/outline';
+import { FlagIcon as FlagIconOutline, PencilSquareIcon, ClipboardIcon, Squares2X2Icon, TrashIcon } from '@heroicons/react/24/outline';
 import { FlagIcon as FlagIconSolid } from '@heroicons/react/24/solid';
 import React from 'react';
 
@@ -23,7 +23,6 @@ export const ContextMenu: React.FC<ContextMenuProps> = ({
   onCopy,
   onDuplicate,
   onDelete,
-  onClose,
 }) => {
   if (!isOpen || !position) return null;
   return (

@@ -15,12 +15,6 @@ export default function Home() {
   const [pages, setPages] = useState<Page[]>(initialPages);
   const [activePageId, setActivePageId] = useState(pages[0].id);
 
-  const handlePagesChange = (newPages: any[], newActiveId?: string) => {
-    setPages(newPages);
-    if (newActiveId) setActivePageId(newActiveId);
-    else if (!newPages.find((p) => p.id === activePageId) && newPages.length > 0) setActivePageId(newPages[0].id);
-  };
-
   return (
     <div className="min-h-screen flex flex-col bg-gray-50">
       <div className="flex-shrink-0">

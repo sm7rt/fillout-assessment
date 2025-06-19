@@ -83,7 +83,6 @@ export const SortablePage = React.forwardRef<HTMLButtonElement, SortablePageProp
     const [mounted, setMounted] = useState(false);
     const contextMenuBtnRef = useRef<HTMLSpanElement>(null);
     const [menuPos, setMenuPos] = useState<{ top: number; left: number } | null>(null);
-    const contextMenuRef = useRef<HTMLDivElement>(null);
     useEffect(() => { setMounted(true); }, []);
 
     useEffect(() => {
@@ -260,3 +259,5 @@ export const SortablePage = React.forwardRef<HTMLButtonElement, SortablePageProp
     );
   }
 ); 
+
+SortablePage.displayName = "SortablePage";
